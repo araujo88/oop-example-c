@@ -3,8 +3,7 @@
 
 int main(int argc, char *argv[])
 {
-	EmployeePtr e = employeeConstructor();
-	employeeInitialize(e, 1, "John Doe");
+	EmployeePtr e = employeeConstructor(1, "John Doe");
 
 	printf("Employee name: %s, employee number: %d\n", employeeGetEmployeeName(e), employeeGetEmployeeNumber(e));
 

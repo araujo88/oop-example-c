@@ -3,16 +3,12 @@
 #include <stdio.h>
 #include <string.h>
 
-EmployeePtr employeeConstructor()
+EmployeePtr employeeConstructor(int emp_no, char *name)
 {
     EmployeePtr this = (EmployeePtr)malloc(sizeof(EmployeePtr));
-    return this;
-}
-
-void employeeInitialize(EmployeePtr this, int emp_no, char *name)
-{
     this->employee_number = emp_no;
     strncpy(this->name, name, strlen(name));
+    return this;
 }
 
 void employeeSetEmployeeNumber(EmployeePtr this, int emp_no)
