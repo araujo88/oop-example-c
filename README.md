@@ -1,2 +1,2 @@
-# oop-exampel-c
-Object-oriented programming in C
+# oop-example-c
+Object-oriented programming example in C
