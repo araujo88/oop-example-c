@@ -7,7 +7,7 @@ typedef struct
 } EmployeeStruct;
 typedef EmployeeStruct *EmployeePtr; // Employee Class
 
-EmployeePtr employeeConstructor(int emp_no, char *name); // allocates memory in heap (as shown above)
+EmployeePtr employeeConstructor(int emp_no, char *name); // allocates memory in heap
 
 // Getters and setters
 void employeeSetEmployeeNumber(EmployeePtr this, int emp_no);
